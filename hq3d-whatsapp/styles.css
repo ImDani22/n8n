@@ -1,0 +1,33 @@
+:root{color-scheme:dark;--bg:#0b1020;--surface:#11182c;--text:#f7f8fb;--muted:#aeb8d0;--accent:#7c5cff;--link:#c3b5ff;--border:#26324d}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.65}
+a{color:var(--link);text-underline-offset:.18em}
+a:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.wrap{width:min(100% - 2rem,960px);margin-inline:auto}
+.site-header{border-bottom:1px solid var(--border);background:#0b1020}
+.nav{min-height:72px;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.brand{display:flex;align-items:center;gap:.7rem;color:var(--text);font-weight:750;text-decoration:none}
+.brand small{display:block;color:var(--muted);font-weight:500}
+.logo{display:grid;place-items:center;width:40px;height:40px;border-radius:8px;background:var(--accent);font-weight:800}
+nav{display:flex;flex-wrap:wrap;gap:1rem}
+nav a{color:var(--muted);font-size:.95rem}
+main{padding-block:2rem 4rem}
+.hero{padding:clamp(2rem,7vw,5rem) 0 2rem}
+.kicker{margin:0 0 .5rem;color:var(--link);font-size:.8rem;font-weight:750;letter-spacing:.12em;text-transform:uppercase}
+h1{max-width:800px;margin:.3rem 0 1rem;font-size:clamp(2rem,6vw,3.4rem);line-height:1.12}
+h2{margin:2rem 0 .5rem;font-size:1.3rem;line-height:1.3}
+p,li{max-width:78ch}
+.lead{max-width:70ch;color:var(--muted);font-size:1.15rem}
+.draft{padding:.9rem 1rem;border-left:4px solid #e7a43b;border-radius:4px;background:#2a2419;color:#ffe2a8;font-weight:650}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-block:1rem 3rem}
+.card,.policy{border:1px solid var(--border);border-radius:10px;background:var(--surface);padding:1.35rem}
+.card h2{margin-top:0}
+.card p{color:var(--muted)}
+.policy{max-width:860px;margin:1rem auto 2rem;padding:clamp(1.2rem,4vw,2rem)}
+.policy h1{font-size:clamp(2rem,5vw,2.8rem)}
+.policy h2{margin-top:2rem}
+.policy li{padding-left:.2rem;margin:.35rem 0}
+.link-list{padding-left:1.25rem}
+footer{border-top:1px solid var(--border);padding:1.5rem 0;color:var(--muted);font-size:.92rem}
+@media(max-width:720px){.nav{align-items:flex-start;flex-direction:column;padding-block:1rem}.cards{grid-template-columns:1fr}nav{gap:.75rem}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
